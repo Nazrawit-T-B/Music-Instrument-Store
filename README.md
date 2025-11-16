@@ -14,7 +14,7 @@ Search bar with instant filtering
 
 🛒 Shopping & Checkout
 
-Add music tracks/albums to cart
+Add instruments to cart
 
 View cart summary with dynamic price updates
 
