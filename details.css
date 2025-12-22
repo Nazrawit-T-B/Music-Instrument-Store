@@ -1,0 +1,203 @@
+.productcard{
+    display:flex;
+    border:solid;
+    border-width:1px;
+    border-radius:1rem;
+    margin:20px;
+    margin-left:5px;
+    margin-right:10px;
+    align-items: flex-start;
+    flex: 0 0 auto;
+}
+.productcard:hover{
+    opacity:80%;
+}
+.product-image{
+    width: 708px;
+    height:424px;
+    display:flex;
+    margin-left:20px;
+}
+.price{
+    color:green;
+}
+.productdetails{
+    margin:20px;
+    margin-left:30px;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:1rem;
+    justify-content:center;
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.cartbutton:hover{
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+.cartbutton{
+    border:soild;
+    width: 237px;
+    height:50px;
+    background-color:white;
+    font-family:'Montserrat', sans-serif;
+    display:block;
+
+}
+.acousticguitars{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:nowrap;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.titles{
+    background-color:black;
+    color:white;
+     width: 237px;
+    height:50px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    display:flex;
+
+}
+
+.hand{
+    border:soild;
+    width: 70px;
+    height:50px;
+    background-color:white;
+    font-family:'Montserrat', sans-serif;
+    gap:30px;
+}
+.hand:hover{
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+.electricguitars{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:nowrap;
+}
+.mainproducts{
+   font-family: 'Outfit', sans-serif;
+    text-align:center;
+    font-size: 60px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+.outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+}
+/* display flex has to be used with align-items to 
+center the items vertically  thus making the text able to 
+be side by side*/
+
+.navbar .nav-logo .logo-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.header-logo{
+    width: 50px;
+    height: 50px;
+    padding-left: 0; /* Removed unnecessary padding */
+    margin-right: 10px; /* Added spacing between logo and text */
+}
+.nav-menu {
+    display: flex;
+    gap: 30px; /* Adjust spacing between navigation links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px; /* Add subtle rounding for hover effect */
+}
+
+.nav-item {
+    display: inline-block;
+}
+.navbar {
+    display: flex;            /* Make logo and menu sit next to each other */
+    align-items: center;      /* Vertically center the logo and menu */
+    justify-content: space-between; /* Space between logo and nav menu */
+    padding: 10px 20px;       /* Optional spacing */
+    background-color: #fff;   /* Or your preferred background */
+}
+.Speakers{
+        display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:nowrap;
+
+}
+.internal-nav{
+    display: flex;
+    gap: 100px; /* Adjust spacing between navigation links */
+    list-style: none;
+    margin-left: 600px;
+    padding: 0;
+    text-align: center;
+}
+.internal-nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: grey;
+}
+.internal-nav a:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px; /* Add subtle rounding for hover effect */
+}
