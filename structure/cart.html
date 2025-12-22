@@ -1,55 +1,112 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shopping Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <h4> </h4>
-        <nav>
-            <a href="home.hmtl">Home</a>
-            <a href="products.html "> products</a>
-            <a href="cart.html">🛒</a>
-        </nav>
-        <section>
-        <section class="addtocart">
-        <table cellspacing="20">
-            <thead>
-            <tr>
-                <th>Products</th>
-                <th>Quantity</th>
-                <th>Action</th>
-                <th>Total price</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td><input type="number" value="1" step="1" min="1" max="10"> </td>
-                    <td><input type="button" value="Purchase"> <input type="button" value="Rent"></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        </section>
-        <section>
-            <h3>Purchase</h3>
-            <p>Subtotal: <span id="subtotal"></span></p>
-            <p>Tax(15%): <span id="taxAmount"></span></p>
-            <p>Discount Amount: <span id="discountAmount"></span></p>
-            <p>Total: <span id="total"></span></p>
-        </section>
-        <section>
-            <h3>Rent</h3>
-        </section>
-        <button type="submit" value="submit">Check out</button>
-        </section>
-        <footer>
-            
-        </footer>
-    </body>
+<link rel="stylesheet" href="cart.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#hero-section" class="nav-logo">
+            <img src="logo.png" alt="Vinyl Sounds Logo" class="header-logo">
+            <span class="logo-text">Vinyl Sounds</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#hero-section">Home</a>
+            <a href="#about-section">About Us</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="productdetails.html">Product Details</a>
+            <a href="cart.html">Cart</a>
+            <a href="signin.html">Sign-In</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main-grid">
+
+        <div class="card">
+            <h2>Your Cart</h2>
+
+            <div class="cart-box">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="product-cell">
+                                <div class="product">
+                                    <div class="product-img"></div>
+                                    <div>
+                                        <strong>Laptop</strong><br>
+                                        <small>Professional Model</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <input type="number" min="1" value="1">
+                            </td>
+
+                            <td>
+                                <div class="actions">
+                                    <button class="purchase">Purchase</button>
+                                    <button class="rent">Rent</button>
+                                </div>
+                            </td>
+
+                            <td class="row-total">$0.00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+        <div>
+
+            <div class="card details">
+                <h3>Purchase Order Details</h3>
+                <p><span>Subtotal</span><span>$0.00</span></p>
+                <p><span>Tax</span><span>$0.00</span></p>
+                <p><span>Discount</span><span>-$0.00</span></p>
+                <p class="total"><span>Total</span><span>$0.00</span></p>
+            </div>
+
+            <br>
+
+            <div class="card details">
+                <h3>Rent Order Details</h3>
+                <p><span>Days</span><span>3</span></p>
+                <p><span>Cost / Day</span><span>$0.00</span></p>
+                <p class="total"><span>Total Rent</span><span>$0.00</span></p>
+
+                <div class="checkout">
+                    <button>Proceed to Checkout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
 </html>
-
 
