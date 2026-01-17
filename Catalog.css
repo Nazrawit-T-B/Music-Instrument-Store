@@ -207,6 +207,7 @@ header {
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.3);
+     cursor: pointer;
 }
 
 .subcategory-card::before {
@@ -553,4 +554,57 @@ header {
     .subcategory-card::after {
         display: none;
     }
+}
+
+.catalog-search {
+    text-align: center;
+    margin: 30px auto 50px;
+    max-width: 600px;
+}
+
+#searchCatalog {
+    padding: 15px 25px;
+    width: 100%;
+    border: 2px solid #eaeaea;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#searchCatalog:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+}
+
+#searchResults {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+/* ===== MOBILE MENU TOGGLE STYLES ===== */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+}
+
+.nav-item {
+    list-style: none;
 }
