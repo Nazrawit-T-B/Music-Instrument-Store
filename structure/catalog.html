@@ -12,11 +12,12 @@
 </head>
 
 <body>
+     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html" class="nav-logo">
-                    <img src="images/logo.png" alt="Music Instrument Store Logo" class="header-logo">
+                  <img src="images/logo.png" alt="The Fine Tune - Music Instrument Store" class="header-logo">
                     <p class="logo-text">The Fine Tune</p>
                 </a>
             </div>
@@ -34,7 +35,10 @@
     <main class="catalog-main">
         <h1>Our Product Catalog</h1>
         <p class="catalog-description">Browse our collection and find your perfect instrument</p>
-
+<div class="catalog-search">
+    <input type="text" id="searchCatalog" placeholder="Search instruments by name or category...">
+    <div id="searchResults"></div>
+</div>
         <section id="guitars" class="catalog-section">
             <h2>Guitars</h2>
             <div class="subcategory-grid">
@@ -83,5 +87,6 @@
             </div>
         </section>
     </main>
+    <script src="catalog.js"></script>
 </body>
 </html>
