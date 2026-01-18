@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-        <link id="favicon" rel="icon" type="image/jpg" href="productimages\favicon.jpg">    
-    </head>
-     <title>Sign In</title>
-    <body>
-        <form id="signin">
-            <fieldset>
-                <legend>Sign In</legend>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <br> <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br> <br>
-                <input type="submit" value="Sign In">
-                <p><a href="signup.html">Don't have an account? Sign up here.</a></p>
-            </fieldset>
-        </form>
-    </body>
+  <head>
+    <link rel="stylesheet" href="../assets/css/signin.css">
+    <link rel="stylesheet" href="../assets/css/signin.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <script src="../assets/javascript/signin.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/jpg"
+      href="../media/productimages/favicon.jpg"
+    >
+    <title>Sign In</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <form id="signin">
+      <fieldset>
+        <legend>Sign In</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <input type="submit" value="Sign In">
+        <p>Don't have an account? <a href="signup.html"><p>Sign up here.<p></a></p>
+      </fieldset>
+    </form>
+  </body>
 </html>
