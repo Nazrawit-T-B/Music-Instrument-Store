@@ -1,0 +1,35 @@
+
+const productIndex = [
+  {category: "Acoustic Guitars", name: "Martin D-28", targetId: "product-1"},
+  {category: "Acoustic Guitars", name: "Taylor 814ce", targetId: "product-2"},
+  {category: "Acoustic Guitars", name: "Yamaha FG800", targetId: "product-3"},
+  {category: "Acoustic Guitars", name: "Gibson Hummingbird", targetId: "product-4"},
+  {category: "Acoustic Guitars", name: "Fender CD-60S", targetId: "product-5"},
+  {category: "Electric Guitars", name: "Gibson Les Paul Custom", targetId: "product-6"},
+  {category: "Electric Guitars", name: "Gibson EDS-1275 Double Neck", targetId: "product-7"},
+  {category: "Electric Guitars", name: "Gretsch White Falcon", targetId: "product-8"},
+  {category: "Electric Guitars", name: "B.C. Rich Mockingbird", targetId: "product-9"},
+  {category: "Electric Guitars", name: "Ibanez RG750", targetId: "product-10"},
+  {category: "Bass Guitars", name: "Fender Precision Bass", targetId: "product-11"},
+  {category: "Bass Guitars", name: "Fender Jazz Bass", targetId: "product-12"},
+  {category: "Bass Guitars", name: "Music Man StingRay", targetId: "product-13"},
+  {category: "Bass Guitars", name: "Höfner 500/1 Violin Bass", targetId: "product-14"},
+  {category: "Bass Guitars", name: "Rickenbacker 4003", targetId: "product-15"},
+  {category: "Grand Pianos", name: "Steinway & Sons Model D Concert Grand", targetId: "product-16"},
+  {category: "Grand Pianos", name: "Yamaha CFX Concert Grand", targetId: "product-17"},
+  {category: "Grand Pianos", name: "Bösendorfer Imperial 290", targetId: "product-18"},
+  {category: "Grand Pianos", name: "Kawai Shigeru K-Grand SK-EX", targetId: "product-19"},
+  {category: "Grand Pianos", name: "Fazioli F308 Concert Grand", targetId: "product-20"},
+  {category: "Upright Pianos", name: "Yamaha U3 Upright Piano", targetId: "product-21"},
+  {category: "Upright Pianos", name: "Kawai K-300 Upright Piano", targetId: "product-22"},
+  {category: "Upright Pianos", name: "Steinway & Sons Model K Upright", targetId: "product-23"},
+  {category: "Upright Pianos", name: "Bösendorfer 130 Upright Piano", targetId: "product-24"},
+  {category: "Upright Pianos", name: "Petrof P125 Upright Piano", targetId: "product-25"},
+  {category: "Rental Speakers", name: "L Acoustics", targetId: "product-26"},
+  {category: "Rental Speakers", name: "Meyer Sound", targetId: "product-27"},
+  {category: "Rental Speakers", name: "Martin Audio", targetId: "product-28"},
+  {category: "Rental Speakers", name: "JBL professional", targetId: "product-29"},
+  {category: "Rental Speakers", name: "D&B Audiotechnik", targetId: "product-30"}
+];
+
+
