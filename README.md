@@ -4,9 +4,9 @@ This project focuses on a smooth browsing experience, responsive design, and int
 
 ## Features
 
-🎧 Music Browsing
+🎻 Musical Instrument Browsing
 
-Explore new products, best selling products and items
+Explore instruments in stock at the store
 
 Clean card-based layout
 
