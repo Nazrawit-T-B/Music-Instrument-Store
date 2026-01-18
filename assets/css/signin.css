@@ -98,23 +98,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header{
-    margin-top: 0;
-  }
-  .navbar {
-    padding: 10px 15px;
-  }
-  .nav-menu {
-    flex-direction: column;
-    gap: 10px;
-  }
   #signin {
     margin-top: 250px;
   }
   #signin legend {
     font-size: 1.5rem;
-  }
-  .logo-text {
-    font-size: 1rem;
   }
 }
