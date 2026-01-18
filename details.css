@@ -53,7 +53,28 @@
     overflow-x:auto;
     scroll-behavior:smooth;
     gap:20px;
-    white-space:nowrap;
+    white-space:wrap;
+}
+.bassguitars{
+      display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space: wrap;
+}
+.grandpianos{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space: wrap;
+}
+.uprightpianos{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:wrap;
 }
 
 .montserrat {
@@ -63,12 +84,14 @@
     background-color:black;
     color:white;
      width: 237px;
-    height:50px;
+    min-height:50px;
     align-items:center;
     justify-content:center;
     text-align:center;
     display:flex;
-
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .hand{
@@ -89,7 +112,7 @@
     overflow-x:auto;
     scroll-behavior:smooth;
     gap:20px;
-    white-space:nowrap;
+    white-space:wrap;
 }
 .mainproducts{
    font-family: 'Outfit', sans-serif;
@@ -102,94 +125,34 @@
     font-family: 'Outfit', sans-serif;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none; 
-}
-/* display flex has to be used with align-items to 
-center the items vertically  thus making the text able to 
-be side by side*/
 
-.navbar .nav-logo .logo-text {
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.logo-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    white-space: nowrap; /* Prevent text wrapping */
-}
-
-.navbar .nav-menu{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-}
-.header-logo{
-    width: 50px;
-    height: 50px;
-    padding-left: 0; /* Removed unnecessary padding */
-    margin-right: 10px; /* Added spacing between logo and text */
-}
-.nav-menu {
-    display: flex;
-    gap: 30px; /* Adjust spacing between navigation links */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px; /* Add subtle rounding for hover effect */
-}
-
-.nav-item {
-    display: inline-block;
-}
-.navbar {
-    display: flex;            /* Make logo and menu sit next to each other */
-    align-items: center;      /* Vertically center the logo and menu */
-    justify-content: space-between; /* Space between logo and nav menu */
-    padding: 10px 20px;       /* Optional spacing */
-    background-color: #fff;   /* Or your preferred background */
-}
 .Speakers{
         display:flex;
     overflow-x:auto;
     scroll-behavior:smooth;
     gap:20px;
-    white-space:nowrap;
+    white-space:wrap;
 
 }
 .internal-nav{
     display: flex;
-    gap: 100px; /* Adjust spacing between navigation links */
+    justify-content:space-around;
+    position:sticky;
+    gap: 100px; 
     list-style: none;
-    margin-left: 50px;
     padding:15px;
     text-align: center;
     background-color: black;
     color:white;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 .internal-nav a {
+    display:flex;
+    position: static;
+    justify-content:space-around;
+    align-items:center;
+    gap:15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -204,3 +167,7 @@ be side by side*/
     background-color: white;
     border-radius: 5px; /* Add subtle rounding for hover effect */
 }
+
+
+
+
