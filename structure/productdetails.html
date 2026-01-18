@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="../assets/css/details.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css"/>
+    <link rel="stylesheet" href="../assets/css/header.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -9,36 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link id="favicon" rel="icon" type="image/jpg" href="productimages\favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="favicon" rel="icon" type="image/jpg" href="../media/productimages/favicon.jpg">
+ 
+
   </head>
   <title>Product Details</title>
   <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#hero-section" class="nav-logo">
-                    <img src="images/logo.png" alt="Music Instrument Store Logo" class="header-logo">
-                    <svg class="notes" viewBox="0 0 100 100">
-                        <text x="20" y="80">🎵</text>
-                        <text x="50" y="90">🎶</text>
-                        <text x="70" y="80">🎵</text>
-                        <text x="90" y="90">🎶</text>
-                    </svg>
-
-                    <p class="logo-text">The Fine Tune</p>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#hero-section" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about-section" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Product Review</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Product Details</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sign-In</a></li>
-            </ul>
-
-        </nav>
-    </header>
+    <div id="header"></div>
     
     <nav class="internal-nav">
         <a href="#acoustic-guitars">Acoustic</a>
@@ -51,11 +32,12 @@
   
   <section id="acoustic-guitars">
    <div class="mainproducts">Acoustic Guitars</div>
-    <div class="acousticguitars"> 
-      <div class="productcard">
+    
+   <div class="acousticguitars"> 
+      <div class="productcard" id = "product-1">
         <div class="product-image">
           <img
-            src="/media/productimages/martinD28official.png"
+            src="../media/productimages/martinD28official.png"
             alt="martin-D-28"
             class="images"
           />
@@ -84,9 +66,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-2">
         <div class="product-image">
-          <img src="/media/productimages/Taylor814ce.png" alt="Taylor-814ce" />
+          <img src="../media/productimages/Taylor814ce.png" alt="Taylor-814ce" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Taylor-814ce</h2>
@@ -107,9 +89,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-3">
         <div class="product-image">
-          <img src="/media/productimages/YamahaFG800.png" alt="Yamaha-FG800" />
+          <img src="../media/productimages/YamahaFG800.png" alt="Yamaha-FG800" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Yamaha-FG800</h2>
@@ -131,9 +113,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-4">
         <div class="product-image">
-          <img src="/media/productimages/GibsonHummingbirdStandard.png" alt="Gibson-Hummingbird Standard" />
+          <img src="../media/productimages/GibsonHummingbirdStandard.png" alt="Gibson-Hummingbird Standard" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Gibson <br>Hummingbird</h2>
@@ -158,9 +140,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-5">
         <div class="product-image">
-          <img src="/media/productimages/FenderCD60S.png" alt="Fender-CD-60S" />
+          <img src="../media/productimages/FenderCD60S.png" alt="Fender-CD-60S" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Fender – CD-60S</h2>
@@ -185,10 +167,10 @@
  <section id="electric-guitars">
   <div class="mainproducts">Electric Guitars</div>
     <div class="electricguitars">
-        <div class="productcard">
+        <div class="productcard" id="product-6">
         <div class="product-image">
           <img
-            src="/media/productimages/GibsonLesPaulCustom.png"
+            src="../media/productimages/GibsonLesPaulCustom.png"
             alt="Gibson Les Paul Custom"
             class="images"
           />
@@ -217,9 +199,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-7">
         <div class="product-image">
-          <img src="/media/productimages/GibsonEDS1275DoubleNeck.png" alt="Gibson EDS-1275 Double Neck" />
+          <img src="../media/productimages/GibsonEDS1275DoubleNeck.png" alt="Gibson EDS-1275 Double Neck" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Gibson EDS-1275 <br>Double Neck</h2>
@@ -239,9 +221,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-8">
         <div class="product-image">
-          <img src="/media/productimages/GretschWhiteFalcon.png" alt="Gretsch White Falcon" />
+          <img src="../media/productimages/GretschWhiteFalcon.png" alt="Gretsch White Falcon" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Gretsch White <br>Falcon</h2>
@@ -272,9 +254,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-9">
         <div class="product-image">
-          <img src="/media/productimages/B.C. RichMockingbird.png" alt="B.C.Rich Mockingbird" />
+          <img src="../media/productimages/B.C. RichMockingbird.png" alt="B.C.Rich Mockingbird" />
         </div>
         <div class="productdetails">
           <h2 class="titles">B.C.Rich <br>Mockingbird</h2>
@@ -300,9 +282,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-10">
         <div class="product-image">
-          <img src="/media/productimages/IbanezRG750 .png" alt="Ibanez RG750" />
+          <img src="../media/productimages/Ibanez RG750 .png" alt="Ibanez RG750" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Ibanez RG750 </h2>
@@ -328,10 +310,10 @@
      <section id="bass-guitars">
   <div class="mainproducts">Bass Guitars</div>
     <div class="bassguitars">
-        <div class="productcard">
+        <div class="productcard" id="product-11">
         <div class="product-image">
           <img
-            src="/media/productimages/fenderprecision.png"
+            src="../media/productimages/fenderprecision.png"
             alt="Fender Precision Bass"
             class="images"
           />
@@ -359,9 +341,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-12">
         <div class="product-image">
-          <img src="/media/productimages/fenderjazz.png" alt="Fender Jazz Bass" />
+          <img src="../media/productimages/fenderjazz.png" alt="Fender Jazz Bass" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Fender Jazz<br>Bass</h2>
@@ -387,9 +369,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-13">
         <div class="product-image">
-          <img src="/media/productimages/musicman.png" alt="Music-Man-StingRay" />
+          <img src="../media/productimages/musicman.png" alt="Music-Man-StingRay" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Music Man<br>StingRay</h2>
@@ -414,9 +396,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-14">
         <div class="product-image">
-          <img src="/media/productimages/hofner500.png" alt="Höfner 500/1 Violin Bass" />
+          <img src="../media/productimages/hofner500.png" alt="Höfner 500/1 Violin Bass" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Höfner 500Bass<br>/1 Violin Bass</h2>
@@ -441,9 +423,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-15">
         <div class="product-image">
-          <img src="/media/productimages/rickenbacker.png" alt="Rickenbacker 4003" />
+          <img src="../media/productimages/rickenbacker.png" alt="Rickenbacker 4003" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Rickenbacker 4003 </h2>
@@ -472,10 +454,10 @@
 <section id="grand-pianos">
   <div class="mainproducts">Grand Pianos</div>
     <div class="grandpianos">
-        <div class="productcard">
+        <div class="productcard" id="product-16">
         <div class="product-image">
           <img
-            src="/media/productimages/steinway.png"
+            src="../media/productimages/steinway.png"
             alt="Steinway & Sons Model D Concert Grand"
             class="images"
           />
@@ -500,9 +482,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-17">
         <div class="product-image">
-          <img src="/media/productimages/yamaha.png" alt="Yamaha CFX Concert Grand" />
+          <img src="../media/productimages/yamaha.png" alt="Yamaha CFX Concert Grand" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Yamaha CFX <br>Concert Grand</h2>
@@ -522,9 +504,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-18">
         <div class="product-image">
-          <img src="/media/productimages/bosendorfer.png" alt="Bösendorfer-Imperial-290" />
+          <img src="../media/productimages/bosendorfer.png" alt="Bösendorfer-Imperial-290" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Bösendorfer Imperial 290y</h2>
@@ -544,9 +526,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-19">
         <div class="product-image">
-          <img src="/media/productimages/B.C. RichMockingbird.png" alt="Kawai Shigeru K-Grand SK-EX" />
+          <img src="../media/productimages/kawai.png" alt="Kawai Shigeru K-Grand SK-EX" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Kawai Shigeru <br>K-Grand SK-EX</h2>
@@ -566,9 +548,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-20">
         <div class="product-image">
-          <img src="/media/productimages/fazioli.png" alt="Fazioli-F308-Concert Grand" />
+          <img src="../media/productimages/fazioli.png" alt="Fazioli-F308-Concert Grand" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Fazioli F308 Concert Grand </h2>
@@ -593,10 +575,10 @@
      <section id="upright-pianos">
   <div class="mainproducts">Upright Pianos</div>
     <div class="uprightpianos">
-        <div class="productcard">
+        <div class="productcard" id="product-21">
         <div class="product-image">
           <img
-            src="/media/productimages/yamahaupright.png"
+            src="../media/productimages/yamahaupright.png"
             alt="Yamaha U3 Upright Piano"
             class="images"
           />
@@ -619,9 +601,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-22">
         <div class="product-image">
-          <img src="/media/productimages/kawai.png" alt="Kawai K-300 Upright Piano" />
+          <img src="../media/productimages/kawai.png" alt="Kawai K-300 Upright Piano" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Kawai K-300 <br>Upright Piano</h2>
@@ -642,9 +624,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-23">
         <div class="product-image">
-          <img src="/media/productimages/steinwayupright.png" alt="Steinway & Sons Model K Upright" />
+          <img src="../media/productimages/steinwayupright.png" alt="Steinway & Sons Model K Upright" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Steinway & Sons<br>Model K Upright</h2>
@@ -665,9 +647,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-24">
         <div class="product-image">
-          <img src="/media/productimages/bosendorferup.png" alt="Bösendorfer 130 Upright Piano" />
+          <img src="../media/productimages/bosendorferup.png" alt="Bösendorfer 130 Upright Piano" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Bösendorfer 130<br>Upright Piano</h2>
@@ -688,9 +670,9 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div>
-      <div class="productcard">
+      <div class="productcard" id="product-25">
         <div class="product-image">
-          <img src="/media/productimages/petrof.png" alt="Petrof P125 Upright Piano" />
+          <img src="../media/productimages/petrof.png" alt="Petrof P125 Upright Piano" />
         </div>
         <div class="productdetails">
           <h2 class="titles">Petrof P125<br>Upright Piano </h2>
@@ -716,10 +698,10 @@
  <section id="speakers">
   <div class="mainproducts">Rental Speakers</div>
     <div class="Speakers">
-       <div class="productcard">
+       <div class="productcard" id="product-26">
         <div class="product-image">
           <img
-            src="/media/productimages/Lacoustics.png"
+            src="../media/productimages/Lacoustics.png"
             alt="L acoustics"
             class="images"
           />
@@ -738,10 +720,10 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div> 
-             <div class="productcard">
+             <div class="productcard" id="product-27">
         <div class="product-image">
           <img
-            src="/media/productimages/MeyerSound.png"
+            src="../media/productimages/MeyerSound.png"
             alt="Meyer Sound"
             class="images"
           />
@@ -759,10 +741,10 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div> 
-             <div class="productcard">
+             <div class="productcard" id="product-28">
         <div class="product-image">
           <img
-            src="/media/productimages/MartinAudio.png"
+            src="../media/productimages/MartinAudio.png"
             alt="Martin Audio"
             class="images"
           />
@@ -783,10 +765,10 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div> 
-             <div class="productcard">
+             <div class="productcard" id="product-29">
         <div class="product-image">
           <img
-            src="/media/productimages/MartinAudio.png"
+            src="../media/productimages/MartinAudio.png"
             alt="JBL professional"
             class="images"
           />
@@ -807,10 +789,10 @@
           <button class="cartbutton">Add to cart</button>
         </div>
       </div> 
-             <div class="productcard">
+             <div class="productcard" id="product-30">
         <div class="product-image">
           <img
-            src="/media/productimages/dbaudiotechnik.png"
+            src="../media/productimages/dbaudiotechnik.png"
             alt="d&b audiotechnik"
             class="images"
           />
@@ -832,6 +814,53 @@
         </div>
       </div> 
      </section>
+     <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+
+        // Add to cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartButtons = document.querySelectorAll('.cartbutton');
+            cartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.productcard');
+                    const title = productCard.querySelector('.titles').textContent;
+                    const priceText = productCard.querySelector('.price').textContent;
+                    const price = parseFloat(priceText.replace('Price: $', '').replace(',', ''));
+                    const imageSrc = productCard.querySelector('img').src;
+
+                    // Get existing cart from localStorage
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                    // Check if product already in cart
+                    const existingProduct = cart.find(item => item.title === title);
+                    if (existingProduct) {
+                        existingProduct.quantity += 1;
+                    } else {
+                        cart.push({
+                            title: title,
+                            price: price,
+                            image: imageSrc,
+                            quantity: 1
+                        });
+                    }
+
+                    // Save back to localStorage
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Redirect to cart page
+                    window.location.href = 'cart.html';
+                });
+            });
+        });
+    </script>
+    <script src="../assets/javascript/script.js"></script>
+        
   </body>
 </html>
-
