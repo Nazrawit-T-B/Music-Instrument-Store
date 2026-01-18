@@ -3,44 +3,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Catalog - The Fine Tune</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="../assets/css/catalog.css" />
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <script src="../assets/javascript/catalog.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link id="favicon" rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="favicon" rel="icon" type="image/jpg" href="../media/productimages/favicon.jpg">
 </head>
 
 <body>
-     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html" class="nav-logo">
-                  <img src="images/logo.png" alt="The Fine Tune - Music Instrument Store" class="header-logo">
-                    <p class="logo-text">The Fine Tune</p>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html#about-section" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="catalog.html" class="nav-link">Catalog</a></li>
-                <li class="nav-item"><a href="productdetails.html" class="nav-link">Product Details</a></li>
-                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
-                <li class="nav-item"><a href="signin.html" class="nav-link">Sign-In</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <main class="catalog-main">
         <h1>Our Product Catalog</h1>
         <p class="catalog-description">Browse our collection and find your perfect instrument</p>
-<div class="catalog-search">
-    <input type="text" id="searchCatalog" placeholder="Search instruments by name or category...">
-    <div id="searchResults"></div>
-</div>
+
         <section id="guitars" class="catalog-section">
-            <h2>Guitars</h2>
+            <h2>🎸 Guitars</h2>
             <div class="subcategory-grid">
                 <a href="productdetails.html#acoustic-guitars" class="subcategory-card">
                     <h3>Acoustic Guitars</h3>
@@ -61,7 +44,7 @@
         </section>
 
         <section id="pianos" class="catalog-section">
-            <h2>Pianos</h2>
+            <h2>🎹 Pianos</h2>
             <div class="subcategory-grid">
                 <a href="productdetails.html#grand-pianos" class="subcategory-card">
                     <h3>Grand Pianos</h3>
@@ -77,7 +60,7 @@
         </section>
 
         <section id="speakers" class="catalog-section">
-            <h2>Speakers</h2>
+            <h2>🔊 Speakers</h2>
             <div class="subcategory-grid">
                 <a href="productdetails.html#speakers" class="subcategory-card">
                     <h3>PA Systems</h3>
@@ -87,6 +70,6 @@
             </div>
         </section>
     </main>
-    <script src="catalog.js"></script>
+    <div id="footer"></div>
 </body>
 </html>
