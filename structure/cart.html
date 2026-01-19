@@ -1,112 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Shopping Cart</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<link rel="stylesheet" href="cart.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <body>
+    <div id="header"></div>
 
-</head>
-
-<body>
-
-<header>
-    <nav class="navbar">
-        <a href="#hero-section" class="nav-logo">
-            <img src="logo.png" alt="Vinyl Sounds Logo" class="header-logo">
-            <span class="logo-text">Vinyl Sounds</span>
-        </a>
-
-        <div class="nav-links">
-            <a href="#hero-section">Home</a>
-            <a href="#about-section">About Us</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="productdetails.html">Product Details</a>
-            <a href="cart.html">Cart</a>
-            <a href="signin.html">Sign-In</a>
-        </div>
-    </nav>
-</header>
-
-<div class="container">
-    <div class="main-grid">
-
+    <div class="container">
+      <div class="main-grid">
         <div class="card">
-            <h2>Your Cart</h2>
+          <h2>Your Cart</h2>
 
-            <div class="cart-box">
-                <table class="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Action</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
+          <div class="cart-box">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Action</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
 
-                    <tbody>
-                        <tr>
-                            <td class="product-cell">
-                                <div class="product">
-                                    <div class="product-img"></div>
-                                    <div>
-                                        <strong>Laptop</strong><br>
-                                        <small>Professional Model</small>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <input type="number" min="1" value="1">
-                            </td>
-
-                            <td>
-                                <div class="actions">
-                                    <button class="purchase">Purchase</button>
-                                    <button class="rent">Rent</button>
-                                </div>
-                            </td>
-
-                            <td class="row-total">$0.00</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
 
-        
         <div>
+          <div class="card details">
+            <h3>Purchase Order Details</h3>
+            <p>
+              <span>Subtotal</span
+              ><span id="subtotal" class="total-price">$0.00</span>
+            </p>
+            <p><span>Tax</span><span id="tax">$0.00</span></p>
+            <p><span>Discount</span><span id="discount">-$0.00</span></p>
+            <p class="total">
+              <span>Total</span
+              ><span id="total" class="total-price">$0.00</span>
+            </p>
+          </div>
 
-            <div class="card details">
-                <h3>Purchase Order Details</h3>
-                <p><span>Subtotal</span><span>$0.00</span></p>
-                <p><span>Tax</span><span>$0.00</span></p>
-                <p><span>Discount</span><span>-$0.00</span></p>
-                <p class="total"><span>Total</span><span>$0.00</span></p>
+          <div class="card details">
+            <div class="checkout">
+              <button onclick="checkout()">Proceed to Checkout</button>
             </div>
-
-            <br>
-
-            <div class="card details">
-                <h3>Rent Order Details</h3>
-                <p><span>Days</span><span>3</span></p>
-                <p><span>Cost / Day</span><span>$0.00</span></p>
-                <p class="total"><span>Total Rent</span><span>$0.00</span></p>
-
-                <div class="checkout">
-                    <button>Proceed to Checkout</button>
-                </div>
-            </div>
-
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-</body>
+    <div id="footer"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <script>
+      function checkout() {
+        window.location.href = "checkout.html";
+      }
+    </script>
+    <script src="../assets/javascript/script.js">
+          function checkout() {
+          window.location.href = "checkout.html";
+      }
+    </script>
+  </body>
 </html>
-
