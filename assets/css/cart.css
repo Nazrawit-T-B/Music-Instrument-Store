@@ -1,0 +1,128 @@
+.container {
+    padding: 40px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.actions button {
+    margin-right: 5px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.actions button.purchase {
+    background: #19191a;
+    color: #fff;
+}
+
+.actions button.rent {
+    background: #555453;
+    color: #fff;
+}
+
+
+.details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.details .total {
+    font-weight: bold;
+}
+
+.checkout button {
+    background: rgb(77, 77, 77);
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background: #757576;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .main-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .actions button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .checkout button {
+        padding: 8px 0;
+    }
+}
+@media (max-width: 576px) {
+    .nav-logo img {
+        width: 40px;
+        margin-right: 8px;
+    }
+}

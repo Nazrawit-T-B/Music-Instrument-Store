@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+#signin {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+  background: rgba(44, 99, 95, 0.75);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+#signin fieldset {
+  border: none;
+  width: 100%;
+}
+
+#signin legend {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#signin label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+}
+
+#signin input[type="text"],
+#signin input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#signin input[type="text"]:focus,
+#signin input[type="password"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+#signin input[type="submit"] {
+  width: 50%;
+  padding: 20px;
+  background: black;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#signin input[type="submit"]:hover {
+  background-color: rgba(35, 100, 88, 0.75);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+#signin p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #000006;
+}
+
+#signin p a{
+  color:white;
+}
+
+#signin p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #signin {
+    margin-top: 250px;
+  }
+  #signin legend {
+    font-size: 1.5rem;
+  }
+}

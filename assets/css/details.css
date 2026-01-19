@@ -1,0 +1,173 @@
+.productcard{
+    display:flex;
+    border:solid;
+    border-width:1px;
+    border-radius:1rem;
+    margin:20px;
+    margin-left:5px;
+    margin-right:10px;
+    align-items: flex-start;
+    flex: 0 0 auto;
+}
+.productcard:hover{
+    opacity:80%;
+}
+.product-image{
+    width: 708px;
+    height:424px;
+    display:flex;
+    margin-left:20px;
+}
+.price{
+    color:green;
+}
+.productdetails{
+    margin:20px;
+    margin-left:30px;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:1rem;
+    justify-content:center;
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.cartbutton:hover{
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+.cartbutton{
+    border:soild;
+    width: 237px;
+    height:50px;
+    background-color:white;
+    font-family:'Montserrat', sans-serif;
+    display:block;
+
+}
+.acousticguitars{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:wrap;
+}
+.bassguitars{
+      display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space: wrap;
+}
+.grandpianos{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space: wrap;
+}
+.uprightpianos{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:wrap;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.titles{
+    background-color:black;
+    color:white;
+     width: 237px;
+    min-height:50px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    display:flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.hand{
+    border:soild;
+    width: 70px;
+    height:50px;
+    background-color:white;
+    font-family:'Montserrat', sans-serif;
+    gap:30px;
+}
+.hand:hover{
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+.electricguitars{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:wrap;
+}
+.mainproducts{
+   font-family: 'Outfit', sans-serif;
+    text-align:center;
+    font-size: 60px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+.outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.Speakers{
+        display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:20px;
+    white-space:wrap;
+
+}
+.internal-nav{
+    display: flex;
+    justify-content:space-around;
+    position:sticky;
+    gap: 100px; 
+    list-style: none;
+    padding:15px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.internal-nav a {
+    display:flex;
+    position: static;
+    justify-content:space-around;
+    align-items:center;
+    gap:15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+}
+.internal-nav a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px; /* Add subtle rounding for hover effect */
+}
+
+
+
+
