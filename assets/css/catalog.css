@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding-top: 60px;
+    background: #f8f8f8;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Catalog specific styles */
+.catalog-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.catalog-main h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.catalog-description {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.catalog-section {
+    margin-bottom: 60px;
+}
+
+.catalog-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.subcategory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.subcategory-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subcategory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.subcategory-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.subcategory-card p {
+    margin: 0 0 15px 0;
+    color: #666;
+}
+
+.subcategory-card span {
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Catalog responsive */
+    .catalog-main {
+        padding: 10px;
+    }
+
+    .catalog-main h1 {
+        font-size: 28px;
+    }
+
+    .catalog-description {
+        font-size: 16px;
+    }
+
+    .subcategory-grid {
+        grid-template-columns: 1fr;
+    }
+}
