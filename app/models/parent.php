@@ -40,6 +40,10 @@ class ParentModel {
         return $stmt->rowCount();
     }
 
+    protected function lastInsertId(): string {
+        return $this->db->lastInsertId();
+    }
+
     // Example method to use the connection
     public function getConnection() {
         return $this->conn;
