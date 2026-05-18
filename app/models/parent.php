@@ -17,6 +17,28 @@ class ParentModel {
             throw new RuntimeException('Database connection failed: ' . $e->getMessage());
         }
     }
+    
+    // run a query and return all rows
+    protected function query(string $sql, array $params = []): array {
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll();
+    }
+
+    // return one row
+    protected function queryOne(string $sql, array $params = []): ?array {
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        $row = $stmt->fetch();
+        return $row ?: null;
+    }
+
+    // run INSERT/UPDATE/DELETE and return affected rows
+    protected function execute(string $sql, array $params = []): int {
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->rowCount();
+    }
 
     // Example method to use the connection
     public function getConnection() {
