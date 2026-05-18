@@ -6,6 +6,7 @@ define('UPLOAD_PATH', BASE_PATH . 'uploads/');
 
 require_once BASE_PATH . 'config/config.php';
 require_once BASE_PATH . 'config/database.php';
+require_once APP_PATH . 'helpers/helpers.php';
 
 // Autoload all classes from app/
 spl_autoload_register(function (string $class): void {
