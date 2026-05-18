@@ -13,9 +13,10 @@
     require_once $configFile;*/
     
     require_once 'database.php';
-    if (!isset($dsn, $username, $password)) {
-        throw new RuntimeException('Database configuration variables are missing.');
-    }
+    if (!isset($dsn) || !isset($username) || !isset($password)) {
+    throw new RuntimeException('Database configuration variables are missing.');
+}
+
 
     try {
 
