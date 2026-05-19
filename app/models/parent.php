@@ -1,5 +1,5 @@
 <?php
-require_once 'database.php';
+require_once 'config\database.php';
 
 if (!isset($dsn) || !isset($username) || !isset($password)) {
     throw new RuntimeException('Database configuration variables are missing.');
