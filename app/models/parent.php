@@ -20,14 +20,14 @@ class ParentModel {
     
     // run a query and return all rows
     protected function query(string $sql, array $params = []): array {
-        $stmt = $this->db->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
         return $stmt->fetchAll();
     }
 
     // return one row
     protected function queryOne(string $sql, array $params = []): ?array {
-        $stmt = $this->db->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
         $row = $stmt->fetch();
         return $row ?: null;
@@ -35,13 +35,13 @@ class ParentModel {
 
     // run INSERT/UPDATE/DELETE and return affected rows
     protected function execute(string $sql, array $params = []): int {
-        $stmt = $this->db->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
         return $stmt->rowCount();
     }
 
     protected function lastInsertId(): string {
-        return $this->db->lastInsertId();
+        return $this->conn->lastInsertId();
     }
 
     // Example method to use the connection
