@@ -19,7 +19,7 @@ class UserModel extends ParentModel {
         $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
 
         $this->execute(
-            'INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)',
+            'INSERT INTO users (name, email, password) VALUES (?, ?, ?)',
             [$name, $email, $hash]
         );
 

@@ -17,8 +17,8 @@ class AuthController {
 
         $name     = sanitize($_POST['name']     ?? '');
         $email    = sanitize($_POST['email']    ?? '');
-        $password =           $_POST['password'] ?? ''; // don't sanitize passwords
-        $confirm  =           $_POST['confirm']  ?? '';
+        $password =          $_POST['password'] ?? '';
+        $confirm  =          $_POST['confirm']  ?? '';
 
         $errors = $this->validateRegistration($name, $email, $password, $confirm);
 
@@ -30,7 +30,6 @@ class AuthController {
         }
 
         $userId = $this->userModel->create($name, $email, $password);
-
         $this->startUserSession($userId, $name);
         header('Location: /home');
         exit;
@@ -76,7 +75,7 @@ class AuthController {
         $user = $this->userModel->findByEmail($email);
 
         // prevents timing-based user enumeration
-        $hash         = $user['password_hash'] ?? '$2y$12$invaliddummyhashtopreventtiming';
+        $hash         = $user['password'] ?? '$2y$12$invaliddummyhashtopreventtiming';
         $passwordValid = $this->userModel->verifyPassword($password, $hash);
 
         if (!$user || !$passwordValid) {
