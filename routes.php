@@ -16,7 +16,6 @@ $routes = [
         'checkout'        => [OrderController::class,   'index'],
         'api/products'    => [APIController::class,     'listProducts'],
         'api/products/(\d+)' => [APIController::class, 'getProduct'],
-        'api/rates'       => [APIController::class,     'getRates'],
     ],
     'POST' => [
         'register'        => [AuthController::class,    'register'],
@@ -24,7 +23,6 @@ $routes = [
         'cart/add'        => [CartController::class,    'add'],
         'cart/remove'     => [CartController::class,    'remove'],
         'checkout'        => [OrderController::class,   'place'],
-        'admin/products'  => [AdminController::class,   'create'],
     ],
 ];
 
