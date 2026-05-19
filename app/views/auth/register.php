@@ -49,6 +49,6 @@ unset($_SESSION['form_errors'], $_SESSION['form_old']);
     </form>
 </div>
 
-<script src="/Music-Instrument-Store/assets/javascript/signup.js"></script>
+<script src="/assets/javascript/signup.js"></script>
 
 <?php require_once VIEW_PATH . 'partials/footer.php' ?>

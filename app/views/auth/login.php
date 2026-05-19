@@ -32,6 +32,6 @@ unset($_SESSION['form_errors']);
     </fieldset>
 </form>
 
-<script src="/Music-Instrument-Store/assets/javascript/signin.js"></script>
+<script src="/assets/javascript/signin.js"></script>
 
 <?php require_once VIEW_PATH . 'partials/footer.php' ?>
