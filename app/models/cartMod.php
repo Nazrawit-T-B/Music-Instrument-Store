@@ -1,6 +1,17 @@
 <?php
-    require_once 'models/ParentModel.php';
+    require_once APP_PATH . 'models/ParentModel.php';
     class cartModel extends ParentModel {
+        public function getByUser(int $userId): array {
+            $stmt = $this->db->prepare(
+                "SELECT ci.product_id, ci.quantity, p.name, p.price
+                FROM cart_items ci
+                JOIN products p ON ci.product_id = p.id
+                WHERE ci.user_id = ?"
+            );
+            $stmt->execute([$userId]);
+            return $stmt->fetchAll();
+        }
+            
         public function checkStock($productId, $quantity) {
             $stmt = $this->db->prepare("SELECT stock FROM products WHERE id = ?");
             $stmt->execute([$productId]);

@@ -90,6 +90,9 @@ class AuthController {
         }
 
         session_regenerate_id(true);
+        // Merge guest cart into the user's DB cart
+        $cartController = new CartController();
+        $cartController->onUserLogin((int)$user['id']);
         $this->startUserSession((int)$user['id'], $user['name']);
 
         header('Location: /home');
