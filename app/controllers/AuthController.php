@@ -84,6 +84,11 @@ class AuthController {
             header('Location: /login');
             exit;
         }
+        
+        if (class_exists('CartC')) {
+            $cartController = new CartC();
+            $cartController->mergeCart((int)$user['id']);
+        }
 
         session_regenerate_id(true);
         $this->startUserSession((int)$user['id'], $user['name']);
