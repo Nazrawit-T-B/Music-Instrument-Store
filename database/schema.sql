@@ -64,7 +64,7 @@ INSERT INTO categories (id,name) VALUES (1, 'Acoustic Guitars'),
 (5, 'Upright Pianos'),
 (6, 'Rental Speakers');
 
-INSERT INTO products (name, category_id, price, image, stock) VALUES
+INSERT INTO products (name, category_id, price, im, stock) VALUES
 
 -- Acoustic Guitars (category 1)
 ('Martin D-28',              1,  2899.00, 'martinD28official.png',       50),
