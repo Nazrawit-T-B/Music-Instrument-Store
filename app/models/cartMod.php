@@ -25,5 +25,17 @@
                 $insert->execute([$userId, $productId, $quantity]);
             }
         }
+        public function remove($userId, $productId) {
+            $stmt = $this->conn->prepare("DELETE FROM cart_items WHERE user_id = ? AND product_id = ?");
+            $stmt->execute([$userId, $productId]);
+        }
+        public function clear($userId) {
+            $stmt = $this->conn->prepare("DELETE FROM cart_items WHERE user_id = ?");
+            $stmt->execute([$userId]);
+        }
+        /*public function Update($userId, $productId, $quantity) {
+            $stmt = $this->conn->prepare("UPDATE cart_items SET quantity = ? WHERE user_id = ? AND product_id = ?");
+            $stmt->execute([$quantity, $userId, $productId]);
+        }*/
     }
 ?>
