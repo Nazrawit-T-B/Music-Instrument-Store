@@ -1,8 +1,8 @@
 -- this is the schema used to intialize the database for the music store
 -- this code can be just copy pasted to phpMyAdmin or used on a local MySQL Server
 
-CREATE DATABASE IF NOT EXISTS store;
-USE store;
+CREATE DATABASE IF NOT EXISTS music_store;
+USE music_store;
 
 CREATE TABLE IF NOT EXISTS categories(
     id INT AUTO_INCREMENT PRIMARY KEY, 
