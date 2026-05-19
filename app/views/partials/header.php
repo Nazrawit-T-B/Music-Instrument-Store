@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Fine Tune</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/Music-Instrument-Store/assets/css/styles.css">
+    <link rel="stylesheet" href="/Music-Instrument-Store/assets/css/header.css">
+    <link rel="stylesheet" href="/Music-Instrument-Store/assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id="favicon" rel="icon" type="image/jpg" href="/media/productimages/favicon.jpg">
+    <link id="favicon" rel="icon" type="image/jpg" href="/Music-Instrument-Store/media/productimages/favicon.jpg">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     <nav class="navbar">
         <div class="logo">
             <a href="/home" class="nav-logo">
-                <img src="/media/productimages/logo.png" alt="Music Instrument Store Logo" class="header-logo">
+                <img src="/Music-Instrument-Store/media/productimages/logo.png" alt="Music Instrument Store Logo" class="header-logo">
                 <svg class="notes" viewBox="0 0 100 100">
                     <text x="20" y="80">🎵</text>
                     <text x="50" y="90">🎶</text>

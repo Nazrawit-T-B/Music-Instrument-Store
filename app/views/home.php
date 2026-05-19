@@ -16,10 +16,10 @@
         </div>
         <div id="search-results"></div>
     </div>
-    <img class="vinyl" src="/media/productimages/vinyl-record.jpg" alt="instrument" />
+    <img class="vinyl" src="/Music-Instrument-Store/media/productimages/vinyl-record.jpg" alt="instrument" />
 </div>
 
-<script src="/assets/javascript/productNames.js"></script>
-<script src="/assets/javascript/search.js"></script>
+<script src="/Music-Instrument-Store/assets/javascript/productNames.js"></script>
+<script src="/Music-Instrument-Store/assets/javascript/search.js"></script>
 
 <?php require_once VIEW_PATH . 'partials/footer.php' ?>
