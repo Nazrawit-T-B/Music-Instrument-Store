@@ -150,6 +150,10 @@ class CartController
             $_SESSION['cart'] = [];
         }
     }
+    public function onUserLogin(int $userId): void
+{
+    $this->mergeCart($userId);
+}
 
     private function respond(int $statusCode, array $data): void
     {
