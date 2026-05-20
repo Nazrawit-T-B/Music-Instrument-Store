@@ -19,7 +19,7 @@ class CartController
     }
 
 public function index(): void {
-        require_login();
+        //require_login();
 
         $isLoggedIn = is_logged_in();
         $userId     = $isLoggedIn ? $_SESSION['user_id'] : null;
