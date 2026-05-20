@@ -1,5 +1,5 @@
 <?php require_once VIEW_PATH . 'partials/header.php' ?>
-
+<link rel="stylesheet" href="/assets/css/cart.css">
 <div class="container">
     <div class="main-grid">
         <div class="card">

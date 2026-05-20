@@ -1,5 +1,5 @@
 <?php require_once VIEW_PATH . 'partials/header.php' ?>
-
+<link rel="stylesheet" href="/assets/css/styles.css">
 <div class="container" id="hero-section">
     <div class="left">
         <div class="hero_text">Music Instrument Market</div>

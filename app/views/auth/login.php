@@ -12,7 +12,7 @@ unset($_SESSION['form_errors']);
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
-
+<link rel="stylesheet" href="/assets/css/signin.css">
 <form id="signin" method="POST" action="/login">
     <?= csrf_field() ?>
     <fieldset>
@@ -32,6 +32,6 @@ unset($_SESSION['form_errors']);
     </fieldset>
 </form>
 
-<script src="/assets/javascript/signin.js"></script>
+<!--<script src="/assets/javascript/signin.js"></script>-->
 
 <?php require_once VIEW_PATH . 'partials/footer.php' ?>

@@ -13,7 +13,7 @@ unset($_SESSION['form_errors'], $_SESSION['form_old']);
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
-
+<link rel="stylesheet" href="/assets/css/signup.css">
 <div class="form-container">
     <form id="signup" method="POST" action="/register">
         <?= csrf_field() ?>
@@ -49,6 +49,6 @@ unset($_SESSION['form_errors'], $_SESSION['form_old']);
     </form>
 </div>
 
-<script src="/assets/javascript/signup.js"></script>
+<!--<script src="/assets/javascript/signup.js"></script>-->
 
 <?php require_once VIEW_PATH . 'partials/footer.php' ?>
