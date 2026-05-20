@@ -18,9 +18,9 @@
 
 <div class="main-content">
 
-    <div class="container">
+    <form method="POST" action="/checkout">
 
-        <form method="POST" action="/checkout">
+        <div class="container">
 
             <!-- PERSONAL INFO -->
             <div class="card">
@@ -71,11 +71,11 @@
                 <input type="text" name="notes">
             </div>
 
-            <button class="order-button">Place Order</button>
+        </div>
 
-        </form>
+        <button class="order-button">Place Order</button>
 
-    </div>
+    </form>
 
 </div>
 
