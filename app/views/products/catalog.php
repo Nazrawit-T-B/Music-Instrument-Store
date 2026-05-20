@@ -97,7 +97,7 @@
                             <div class="product-card">
                                 <div class="product-image">
                                     <?php if (!empty($product['im'])): ?>
-                                        <img src="<?php echo htmlspecialchars($product['im']); ?>" 
+                                        <img src="/media/productimages/<?php echo htmlspecialchars($product['im']); ?>" 
                                              alt="<?php echo htmlspecialchars($product['name']); ?>"
                                              loading="lazy">
                                     <?php else: ?>

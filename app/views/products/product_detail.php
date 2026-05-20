@@ -1,3 +1,4 @@
+<?php require_once VIEW_PATH . 'partials/header.php' ?>
 <?php
 /**
  * Product Detail View
@@ -33,7 +34,7 @@
                 <!-- Product Image -->
                 <div class="product-image-section">
                     <?php if (!empty($product['im'])): ?>
-                        <img src="<?php echo htmlspecialchars($product['im']); ?>" 
+                        <img src="/media/productimages/<?php echo htmlspecialchars($product['im']); ?>" 
                              alt="<?php echo htmlspecialchars($product['name']); ?>"
                              class="product-image-large">
                     <?php else: ?>
@@ -145,7 +146,7 @@
                         <div class="related-product-card">
                             <div class="product-image">
                                 <?php if (!empty($related['im'])): ?>
-                                    <img src="<?php echo htmlspecialchars($related['im']); ?>" 
+                                    <img src="/media/productimages<?php echo htmlspecialchars($related['im']); ?>" 
                                          alt="<?php echo htmlspecialchars($related['name']); ?>"
                                          loading="lazy">
                                 <?php else: ?>
@@ -190,3 +191,4 @@
     </script>
 </body>
 </html>
+<?php require_once VIEW_PATH . 'partials/footer.php' ?>

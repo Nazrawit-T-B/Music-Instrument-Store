@@ -42,7 +42,7 @@ public function index(): void {
     }
 
     public function add(): void {
-        verify_csrf_token();
+        //verify_csrf_token();
         $productId  = isset($_POST['product_id']) ? (int)$_POST['product_id'] : null;
         $quantity   = isset($_POST['quantity'])   ? (int)$_POST['quantity']   : 1;
         $isLoggedIn = is_logged_in();

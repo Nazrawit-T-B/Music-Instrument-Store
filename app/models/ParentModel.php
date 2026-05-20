@@ -9,9 +9,19 @@ abstract class ParentModel {
     }
 
     //run a query and return all rows
-    protected function query(string $sql, array $params = []): array {
+    protected function query(string $sql, array $params = []): array
+{
         $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
+        foreach ($params as $key => $value) {
+            $type = match (true) {
+                is_int($value)  => PDO::PARAM_INT,
+                is_bool($value) => PDO::PARAM_BOOL,
+                is_null($value) => PDO::PARAM_NULL,
+                default         => PDO::PARAM_STR
+            };
+            $stmt->bindValue($key, $value, $type);
+        }
+        $stmt->execute();
         return $stmt->fetchAll();
     }
 
